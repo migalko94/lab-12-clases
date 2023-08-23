@@ -33,9 +33,7 @@ class CalculoReserva {
 
   reservaIndividual(reserva: Reserva) {
     return (
-      this.precioHabitacion(reserva, this._precio) *
-        reserva.pax *
-        reserva.noches +
+      this.precioHabitacion(reserva, this._precio) * reserva.noches +
       this.suplementoPersonasExtra(reserva)
     );
   }
